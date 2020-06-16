@@ -1,0 +1,455 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --azul: #108abe;
+  --blacked: #191919;
+}
+
+/*POP UP*/
+#pop.type2{
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  transition:0.4s;
+  z-index: 10000000000000000000;
+  opacity:1;
+  transition:0.4s;
+  animation: aparecerOpacidad 0.4s linear 1;
+  overflow: auto;
+  padding: 100px 0px;
+  box-sizing: border-box;
+}
+
+#pop.type2 .cont{
+  width: 700px;
+  position: relative;
+  display: inline-block;
+  background:var(--blacked);
+  padding: 20px;
+  box-sizing:border-box;
+  transform: scale(1);
+  transition:0.4s;
+  border-radius:10px;
+  animation: aparecer 0.3s linear 1;
+}
+
+#pop.type2 .cont .icon-x{
+  color: #fff;
+  background: #e74b3c;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right:20px;
+  padding: 10px;
+  box-sizing:border-box;
+  border-radius: 100%;
+  font-size:30px;
+}
+
+#pop.type2 .cont h2{
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#pop.type2 .cont h2 + p{
+  margin-bottom: 20px;
+  font-family: 'Raleway';
+  text-align: justify;
+  color: #fff;
+}
+
+#pop.type2 .cont .calc{
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#pop.type2 .cont .calc input{
+  font-size:18px;
+  width: 100%;
+  padding: 10px;
+  color: var(--blacked);
+  background: #fff;
+  outline: 0px;
+  border:0px;
+  text-align: left;
+  margin-right:10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#pop.type2 .cont .calc button{
+  font-size:18px;
+  padding: 10px 15px;
+  color: #fff;
+  background: #e74b3c;
+  outline: 0px;
+  border:0px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#pop.type2 .cont .results{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display:inline-block;
+}
+
+#pop.type2 .cont .results p{
+  width: 100%;
+  font-size:18px;
+  color: #fff;
+  display:inline-block;
+  margin: 5px 0px;
+  padding: 15px;
+  transform: scale(1);
+  transition:0.3s;
+  animation: aparecer 0.3s linear 1;
+  border-radius: 10px;
+  box-sizing:border-box;
+}
+
+/*BODY STYLE start*/
+body .limiter.little{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+body .limiter.big{
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+body.type2{
+  background: #fff;
+  font-family: 'Lato';
+  overflow-x: hidden;
+}
+
+body.type2 *{
+  font-family: 'Lato';
+}
+
+/*HEADER start*/
+header.type2{
+  width: 100%;
+  background: var(--azul);
+  border-bottom: 5px solid #333;
+  box-sizing: border-box;
+  text-align: right;
+}
+header.type2 .limiter{
+  max-width: 100%;
+}
+header.type2 *{
+  color: #fff;
+}
+
+header.type2 h1{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  text-align: left;
+  top: 20px;
+  left: 20px;
+}
+
+header.type2 h1 .bold{
+  font-weight: 600;
+}
+
+header.type2 h1 .bold + .bold{
+  margin-left: 5px;
+}
+
+header.type2 h1 .sub{
+  display: block;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+header.type2 ul{
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 400px);
+}
+
+header.type2 ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  padding-top: 30px;
+  margin-bottom: -5px;
+  font-size: 18px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Oswald';
+  border-bottom: 5px solid transparent;
+}
+
+header.type2 ul li:hover{
+  background: rgba(0,0,0,0.2);
+  border-bottom: 5px solid #555;
+}
+/*HEADER end*/
+/*SLIDE start*/
+
+#slide.type2{
+  width: 100%;
+  display: table;
+  background: var(--blacked);
+  position: relative;
+}
+
+#slide.type2 .limiter{
+  display: table;
+  height: calc(80vh - 91px);
+  max-height: 500px;
+}
+
+#slide.type2 .limiter .cont{
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: left;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+#slide.type2 .limiter .cont h1{
+  font-size: 45px;
+  color: #fff;
+  font-weight: normal;
+  max-width: calc(100% - 500px);
+}
+
+#slide.type2 .limiter .cont p{
+  margin-top: 20px;
+  font-size: 17px;
+  color: #bbb;
+  width: 90%;
+  display: inline-block;
+  max-width: calc(100% - 600px);
+}
+
+#slide.type2 .thumb{
+  width: 605px;
+  height: 400px;
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  overflow: hidden;
+  text-align: right;
+  background: transparent !important;
+}
+
+#slide.type2 .thumb span{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 550px;
+  /*background-image: url(https://assets.entrepreneur.com/content/3x2/2000/20190502194704-ent19-june-editorsnote.jpeg) !important;*/
+  background-position: center !important;
+  background-size: auto 100% !important;
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   -webkit-text-stroke-width: 5px;
+   -webkit-text-stroke-color: #fff;
+   display: inline-block;
+   margin-top: 5px;
+   transition: 0.2s;
+}
+
+#slide.type2 .thumb span:hover{
+  background-size: auto 110%;
+}
+/*SLIDE end*/
+/*ARTICLES*/
+#body-content.type2{
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  text-align: center;
+}
+
+#body-content.type2 .limiter{
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#body-content.type2 .limiter article{
+  flex-grow: 1;
+  width: 290px;
+  height: 300px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px #ccc;
+  cursor: default;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+
+#body-content.type2 .limiter article *{
+  font-family: 'Raleway';
+}
+
+#body-content.type2 .limiter article .formula-c{
+  width: 100%;
+  height: 100%;
+  background: var(--blacked);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+
+#body-content.type2 .limiter article .formula-c .formula{
+  display: inline-flex;
+}
+
+#body-content.type2 .limiter article .formula-c .formula span{
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+#body-content.type2 .limiter article .formula-c .formula .block{
+  text-align: center;
+}
+
+#body-content.type2 .limiter article .formula-c .formula .root{
+  border-top: 1px solid #fff;
+}
+
+#body-content.type2 .limiter article .formula-c .formula .underline{
+  border-bottom: 1px solid #fff;
+}
+
+#body-content.type2 .limiter article .formula-c .formula .exp{
+  margin-left: -2px;
+  margin-top: -2px;
+  font-size: 8px;
+  position: absolute;
+}
+
+#body-content.type2 .limiter article .formula-c .formula > .block{
+  display: inline-block;
+}
+
+#body-content.type2 .limiter article .formula-c .formula > .block > .block{
+  display: block;
+}
+
+#body-content.type2 .limiter article h2{
+  padding: 15px;
+  padding-bottom: 0px;
+  font-weight: bolder;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+#body-content.type2 .limiter article p{
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 14px;
+}
+
+#body-content.type2 .limiter article button{
+  background: #e74b3c;
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 0px;
+  border-radius: 100%;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.1s;
+  font-size: 0px;
+  top: 10px;
+  right: 10px;
+  outline: 0px;
+  text-transform: capitalize;
+}
+
+#body-content.type2 .limiter article button span{
+  font-size: 18px;
+}
+
+#body-content.type2 .limiter article button:hover{
+  transform: rotate(180deg);
+}
+
+/**/
+/*FOOTER Start*/
+footer.type2{
+  background: var(--blacked);
+}
+
+footer.type2 .limiter *{
+  color: #fff;
+}
+
+footer.type2 .top .limiter > ul > li{
+  display: inline-block;
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Raleway';
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+footer.type2 .top .limiter > ul > li > ul{
+  margin-top: 10px;
+}
+
+footer.type2 .top .limiter > ul > li > ul li{
+  padding: 5px;
+  padding-left: 0px;
+  box-sizing: border-box;
+  text-transform: none;
+  list-style: none;
+  font-size: 16px;
+  font-family: 'Raleway';
+  font-weight: lighter;
+}
+
+footer.type2 .bottom{
+  background: #333;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+footer.type2 .bottom span{
+  color: rgba(255, 255, 255, 0.5);
+}

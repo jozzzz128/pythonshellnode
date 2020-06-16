@@ -1,0 +1,49 @@
+{
+    "Nombre" : "José",
+    "Apellido" : "Carrillo",
+    "Expediente" : "278789",
+    "Correo" : "jozzzz128@gmail.com",
+    "Telefono" : "4423389139",
+    "Titulo" : "Calculadora de calculo integral y diferencial",
+    "Descripcion" : "Proyecto final de la materia de Calculo integral y diferencial",
+    "Copyright": "jozzzz128",
+    "Foto": "img/foto.png",
+    "Calculadoras" : [
+        {
+            "title" : "Sistemas de Ecuaciones",
+            "instructions": "Ingrese dos ecuaciones para calcular sus respectivos valores de 'x' y 'y'"
+        },
+        {
+            "title" : "Transformaciones 8X8",
+            "instructions": "Ingrese valores en la matriz para calcular los valores de x"
+        },
+        {
+            "title" : "Calculadora de Newton Raphson",
+            "instructions": "Ingrese una ecuacion para aplicarle el metodo de newton raphson, Nota: Para poner una potencia escriba ** seguido de la potencia, ejemplo: x^2 => x**2"
+        },
+        {
+            "title" : "Division Sintetica",
+            "instructions": "Ingrese una ecuación para aplicar el metodo de Division Sintetica. Llene los campos vacios con el valor correspondiente a cada una de las potencias:<br>_x^8 + __x^7 + __x^6 + __x^5 + __x^4 + __x^3 + __x^2 + __x^1 + _"
+        },
+        {
+            "title" : "Metodo de Descartes",
+            "instructions": "Ingrese una ecuación para calcular sus raices mediante una aproximación con el metodo de descartes"
+        },
+        {
+            "title" : "Regla de los 4 pasos",
+            "instructions": "Ingrese una ecuación para derivarla mediante la regla de los 4 pasos"
+        },
+        {
+            "title" : "Maximos y minimos",
+            "instructions": "Ingrese una ecuación para calcular sus valores maximos y minimos en x"
+        },
+        {
+            "title" : "Metodo de Simpson",
+            "instructions": "Ingrese la ecuación a la que se le va a aplicar el metodo, el limite inferior, el limite superior, y la cantidad de iteraciones a realizar"
+        },
+        {
+            "title" : "Finanzas",
+            "instructions": "Ingrese 2 ecuaciones"
+        }
+    ]
+}

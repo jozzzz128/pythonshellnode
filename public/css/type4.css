@@ -1,0 +1,433 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    --azul: #108abe;
+    --blacked: #191919;
+  }
+
+/*POP UP*/
+#pop.type4{
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  transition:0.4s;
+  z-index: 10000000000000000000;
+  opacity:1;
+  transition:0.4s;
+  animation: aparecerOpacidad 0.4s linear 1;
+  overflow: auto;
+  padding: 100px 0px;
+  box-sizing: border-box;
+}
+
+#pop.type4 .cont{
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  display: inline-block;
+  background:#fff;
+  padding: 20px;
+  box-sizing:border-box;
+  transform: scale(1);
+  transition:0.4s;
+  border-radius:10px;
+  animation: aparecer 0.3s linear 1;
+}
+
+#pop.type4 .cont .icon-x{
+  color: #191919;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right:15px;
+  padding: 8px;
+  border:4px solid #191919;
+  box-sizing:border-box;
+  border-radius: 100%;
+  font-size:30px;
+  font-weight: bolder;
+}
+
+#pop.type4 .cont h2{
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  color: #191919;
+  font-family: 'Alegreya Sans SC';
+  text-transform: uppercase;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+#pop.type4 .cont h2 + p{
+  margin-left:20px;
+  margin-top: -20px;
+  font-family: 'Raleway';
+  text-align: justify;
+  color: #191919;
+}
+
+#pop.type4 .cont .calc{
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#pop.type4 .cont .calc input{
+  font-size:18px;
+  width: 100%;
+  padding: 10px;
+  color: #191919;
+  background: #fff;
+  box-shadow: 2px 2px 20px #ccc;
+  outline: 0px;
+  border:0px;
+  text-align: left;
+  margin-right:10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#pop.type4 .cont .calc button{
+  font-size:18px;
+  padding: 10px 15px;
+  color: #fff;
+  background: #191919;
+  outline: 0px;
+  border:0px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#pop.type4 .cont .results{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display:inline-block;
+}
+
+#pop.type4 .cont .results p{
+  width: 100%;
+  font-size:18px;
+  color: #fff;
+  background: #191919;
+  display:inline-block;
+  margin: 5px 0px;
+  padding: 15px;
+  transform: scale(1);
+  transition:0.3s;
+  animation: aparecer 0.3s linear 1;
+  border-radius: 10px;
+  box-sizing:border-box;
+}
+
+/*BODY STYLE start*/
+body .limiter.little{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+body .limiter.big{
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+body.type4{
+  background: #fff;
+  font-family: 'Lato';
+  overflow-x: hidden;
+}
+
+body.type4 *{
+  font-family: 'Lato';
+}
+
+/*HEADER start*/
+header.type4{
+  width: 100%;
+  background: var(--azul);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  text-align: center;
+}
+header.type4 .limiter{
+  max-width: 100%;
+}
+header.type4 *{
+  color: #fff;
+}
+
+header.type4 h1{
+  display: none;
+}
+
+header.type4 ul{
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 400px);
+}
+
+header.type4 ul li{
+  color:#939999;
+  list-style: none;
+  display: inline-block;
+  padding: 15px;
+  padding-top: 30px;
+  margin-bottom: -5px;
+  font-size: 18px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: 'Alegreya Sans SC';
+  border-bottom: 5px solid transparent;
+}
+
+header.type4 ul li:hover{
+    border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+}
+/*HEADER end*/
+/*SLIDE start*/
+
+#slide.type4{
+  width: 100%;
+  background: var(--azul);
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid #dddddd;
+  text-align: right;
+}
+
+#slide.type4 .limiter .cont{
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#slide.type4 .limiter .cont h1{
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Raleway';
+  font-weight: lighter;
+}
+
+#slide.type4 .limiter .cont p{
+  font-size: 17px;
+  color: #bbb;
+  width: 90%;
+  display: inline-block;
+}
+
+#slide.type4 .thumb{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-size: auto 100% !important;
+  border: 10px solid #f0f0f0;
+  border-top:50px solid #f0f0f0;
+  display: inline-block;
+  margin:30px;
+}
+
+#slide.type4 .thumb span{
+  display: none;
+}
+/*SLIDE end*/
+/*ARTICLES*/
+#body-content.type4{
+  width: 100%;
+  display: inline-block;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#body-content.type4 .limiter{
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#body-content.type4 .limiter article{
+  flex-grow: 1;
+  width: 290px;
+  height: 300px;
+  margin: 10px;
+  overflow: hidden;
+  cursor: default;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+
+#body-content.type4 .limiter article *{
+  font-family: 'Raleway';
+  text-align: center;
+  font-weight:lighter;
+}
+
+#body-content.type4 .limiter article .formula-c{
+  width: calc(100% - 20px);
+  height: 100%;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius:10px;
+  font-size: 20px;
+  font-weight: bolder;
+  box-shadow: 2px 2px 20px #ccc;
+  box-sizing: border-box;
+}
+
+#body-content.type4 .limiter article:nth-child(even) .formula-c{
+    background: var(--azul);
+}
+
+#body-content.type4 .limiter article:nth-child(odd) .formula-c{
+    background: #191919;
+}
+
+#body-content.type4 .limiter article .formula-c .formula{
+  display: inline-flex;
+}
+
+#body-content.type4 .limiter article .formula-c .formula span{
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+#body-content.type4 .limiter article .formula-c .formula .block{
+  text-align: center;
+}
+
+#body-content.type4 .limiter article .formula-c .formula .root{
+  border-top: 2px solid #fff;
+}
+
+#body-content.type4 .limiter article .formula-c .formula .root{
+    border-top: 2px solid #fff;
+  }
+
+#body-content.type4 .limiter article .formula-c .formula .underline{
+  border-bottom: 2px solid #fff;
+}
+
+#body-content.type4 .limiter article .formula-c .formula .exp{
+  margin-left: -2px;
+  margin-top: -2px;
+  font-size: 8px;
+  position: absolute;
+}
+
+#body-content.type4 .limiter article .formula-c .formula > .block{
+  display: inline-block;
+}
+
+#body-content.type4 .limiter article .formula-c .formula > .block > .block{
+  display: block;
+}
+
+#body-content.type4 .limiter article h2{
+  padding: 15px;
+  padding-bottom: 0px;
+  font-weight: bolder;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin-top:0px;
+  color: #191919;
+}
+
+#body-content.type4 .limiter article p{
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 14px;
+  color: #333;
+}
+
+#body-content.type4 .limiter article button{
+  background: #191919;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+  bottom: 20px;
+  right: 20px;
+  outline: 0px;
+  text-transform: capitalize;
+}
+
+#body-content.type4 .limiter article button span{
+  display: none;
+}
+
+/**/
+/*FOOTER Start*/
+footer.type4{
+  border-top: 2px solid #ddd ;
+  background: var(--azul);
+}
+
+footer.type4 .limiter *{
+    color: #939999;
+    font-family: 'Alegreya Sans SC';
+}
+
+footer.type4 .top{
+    margin-bottom: -20px;
+}
+
+footer.type4 .top .limiter > ul > li{
+  display: inline-block;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+footer.type4 .top .limiter > ul > li > ul{
+  margin-top: 10px;
+}
+
+footer.type4 .top .limiter > ul > li > ul li{
+  padding: 5px;
+  padding-left: 0px;
+  box-sizing: border-box;
+  text-transform: none;
+  list-style: none;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+footer.type4 .bottom{
+  text-align: center;
+  color: #fff;
+  padding: 10px ;
+  box-sizing: border-box;
+}
+
+footer.type4 .bottom span{
+  color: rgba(255, 255, 255, 0.5);
+}

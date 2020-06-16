@@ -1,0 +1,17 @@
+@keyframes aparecer{
+    25%{
+      transform: scale(0.9);
+    }
+    75%{
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes aparecerOpacidad{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
